@@ -17,8 +17,26 @@ body {
 }
 
 body,
-button {
+button,
+input {
   font-family: "DM Sans", sans-serif;
+}
+
+button {
+  background-color: #7879f1;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 0.4rem 0.4rem 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #6161cc;
+}
+
+.hide {
+  display: none;
 }
 
 main {
@@ -31,6 +49,7 @@ main {
   text-align: center;
 }
 
+/* screen1 */
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
@@ -64,9 +83,14 @@ input {
   border-radius: 0.4rem 0 0 0.4rem;
 }
 
-button {
-  background-color: #7879f1;
-  color: white;
-  font-weight: bold;
-  border-radius: 0 0.4rem 0.4rem 0;
+/* screen2 */
+h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: 0.4rem;
 }
