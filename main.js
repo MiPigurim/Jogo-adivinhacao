@@ -14,4 +14,6 @@ function handleClick(event) {
       "Acertou em " + xAttempts + " tentativas";
   }
   xAttempts++;
+  inputNumber.value = "";
+  inputNumber.focus();
 }
