@@ -1,5 +1,10 @@
-const randomNumber = Math.round(Math.random() * 10);
-let xAttempts = 1;
+let randomNumber;
+let xAttempts;
+
+function initGame() {
+  randomNumber = Math.round(Math.random() * 10);
+  xAttempts = 1;
+}
 
 function handleClick(event) {
   event.preventDefault();
@@ -17,3 +22,14 @@ function handleClick(event) {
   inputNumber.value = "";
   inputNumber.focus();
 }
+
+function restartGame() {
+  document.querySelector(".screen1").classList.remove("hide");
+  document.querySelector(".screen2").classList.add("hide");
+
+  initGame();
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  initGame();
+});
